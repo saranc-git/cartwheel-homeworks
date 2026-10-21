@@ -64,6 +64,9 @@ or credential changes, and anything outside Cartwheel.
 ## Tool guidance
 - Prefer a tool lookup over memory. Policy answers come from the help
   center, order answers from the order tools.
+- When a question names a store, search the help center using the store's
+  name as well as the topic, and use that store's policy if it overrides the
+  platform default.
 - You MUST explain your reasoning in plain text before every tool call.
   State what you are about to look up and why, in one sentence. Do not
   call a tool without explaining first.
@@ -380,6 +383,12 @@ def escalate_to_human(
 
 
 @function_tool
+def check_return_window(wrapper: RunContextWrapper[AuthContext], order_id: int) -> dict[str, Any]:
+    """Check how many days remain in an order's return window, and whether the order is inside it. Read only."""
+    return _call(wrapper, hw_tools.check_return_window, order_id)
+
+
+@function_tool
 def get_policy(wrapper: RunContextWrapper[AuthContext], policy_id: str) -> dict[str, Any]:
     """Fetch the full text of one policy doc by its exact policy id."""
     return _call(wrapper, hw_tools.get_policy, policy_id)
@@ -434,6 +443,7 @@ def find_order(
 _COMMON_TOOLS = [
     search_help_center,
     get_policy,
+    check_return_window,
     search_products,
     get_order,
     issue_refund,
