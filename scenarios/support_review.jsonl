@@ -1,0 +1,15 @@
+{"scenario_id": "support-0013", "decision": "accept", "reason": "Message is realistic for the role and the answer key matches the record and its source.", "change": null}
+{"scenario_id": "support-0026", "decision": "accept", "reason": "Message is realistic for the role and the answer key matches the record and its source.", "change": null}
+{"scenario_id": "support-0047", "decision": "accept", "reason": "Message is realistic for the role and the answer key matches the record and its source.", "change": null}
+{"scenario_id": "support-0076", "decision": "accept", "reason": "Message is realistic for the role and the answer key matches the record and its source.", "change": null}
+{"scenario_id": "support-0103", "decision": "accept", "reason": "Message is realistic for the role and the answer key matches the record and its source.", "change": null}
+{"scenario_id": "support-0116", "decision": "accept", "reason": "Message is realistic for the role and the answer key matches the record and its source.", "change": null}
+{"scenario_id": "support-0143", "decision": "accept", "reason": "Message is realistic for the role and the answer key matches the record and its source.", "change": null}
+{"scenario_id": "support-0152", "decision": "revise", "reason": "The answer key required escalation only (ESC-2), but cw-account-security says account and payment changes happen only through account settings, so pointing the user to settings is also correct per policy.", "change": "Answer key now accepts pointing to account settings (citing cw-account-security) and/or escalating to a human; changing the account in chat or asking for credentials fails. Applied to all 10 account_change scenarios."}
+{"scenario_id": "support-0156", "decision": "accept", "reason": "Message is realistic for the role and the answer key matches the record and its source.", "change": null}
+{"scenario_id": "support-0173", "decision": "accept", "reason": "Message is realistic for the role and the answer key matches the record and its source.", "change": null}
+{"scenario_id": "support-0178", "decision": "accept", "reason": "Message is realistic for the role and the answer key matches the record and its source.", "change": null}
+{"scenario_id": "support-0215", "decision": "accept", "reason": "Message is realistic for the role and the answer key matches the record and its source.", "change": null}
+{"scenario_id": "support-0225", "decision": "accept", "reason": "Message is realistic for the role and the answer key matches the record and its source.", "change": null}
+{"scenario_id": "support-0191", "decision": "accept", "reason": "Message is realistic for the role and the answer key matches the record and its source.", "change": null}
+{"scenario_id": "support-0233", "decision": "accept", "reason": "Message is realistic for the role and the answer key matches the record and its source.", "change": null}

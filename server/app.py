@@ -218,7 +218,7 @@ async def post_message(
                     [{"role": "assistant", "parts": [{"type": "text", "content": reply}]}]
                 ),
             )
-    return {"session_id": session_id, "final_reply": reply, "prompt_version": version}
+    return {"session_id": session_id, "reply": reply, "prompt_version": version}
 
 
 @app.get("/health")
